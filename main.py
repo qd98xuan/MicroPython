@@ -23,7 +23,8 @@ waln = network.WLAN(network.STA_IF)
 if not waln.isconnected():
     displayOnScreen(display,"log...","net","connecting...")
     waln.active(True)
-    waln.connect("BAIYYYAP","baiyyy06")
+    # waln.connect("BAIYYYAP","baiyyy06")
+    waln.connect("HXPhone","1472583690")
     while(not waln.isconnected()):
         pass
     print("config:",waln.ifconfig()[0])
