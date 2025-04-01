@@ -2,6 +2,8 @@
 from machine import Pin,SPI
 import ssd1306
 import network
+import urequests
+import json
 
 def displayOnScreen(display,title,text1="",text2="",text3=""):
     display.fill(0)
@@ -25,5 +27,12 @@ if not waln.isconnected():
     while(not waln.isconnected()):
         pass
     print("config:",waln.ifconfig()[0])
-    displayOnScreen(display,"now ip",waln.ifconfig()[0],0,20)
+    displayOnScreen(display,"now ip",waln.ifconfig()[0])
+    resp = urequests.get("https://restapi.amap.com/v3/weather/weatherInfo?key=d146bc3bf8eb1c1e1faa3f035e1a864b&city=370200")
+    resp_json = json.loads(resp.text)
+    print(resp_json)
+    print(resp_json.get('status'))
+    print(resp_json.get('lives')[0].get('weather'))
+    displayOnScreen(display,"weather","temp:"+resp_json.get('lives')[0].get('temperature'))
+
 
