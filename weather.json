@@ -1,0 +1,281 @@
+{
+    "weathers":[
+        {
+            "name": "晴",
+            "pinin": "qing"
+        },
+        {
+            "name": "少云",
+            "pinin": "shao yun"
+        },
+        {
+            "name": "晴间多云",
+            "pinin": "qing jian duo yun"
+        },
+        {
+            "name": "多云",
+            "pinin": "duo yun"
+        },
+        {
+            "name": "阴",
+            "pinin": "yin"
+        },
+        {
+            "name": "有风",
+            "pinin": "you feng"
+        },
+        {
+            "name": "平静",
+            "pinin": "ping jing"
+        },
+        {
+            "name": "微风",
+            "pinin": "wei feng"
+        },
+        {
+            "name": "和风",
+            "pinin": "he feng"
+        },
+        {
+            "name": "清风",
+            "pinin": "qing feng"
+        },
+        {
+            "name": "强风/劲风",
+            "pinin": "qiang feng/jin feng"
+        },
+        {
+            "name": "疾风",
+            "pinin": "ji feng"
+        },
+        {
+            "name": "大风",
+            "pinin": "da feng"
+        },
+        {
+            "name": "烈风",
+            "pinin": "lie feng"
+        },
+        {
+            "name": "风暴",
+            "pinin": "feng bao"
+        },
+        {
+            "name": "狂爆风",
+            "pinin": "kuang bao feng"
+        },
+        {
+            "name": "飓风",
+            "pinin": "ju feng"
+        },
+        {
+            "name": "热带风暴",
+            "pinin": "re dai feng bao"
+        },
+        {
+            "name": "霾",
+            "pinin": "mai"
+        },
+        {
+            "name": "中度霾",
+            "pinin": "zhong du mai"
+        },
+        {
+            "name": "重度霾",
+            "pinin": "zhong du mai"
+        },
+        {
+            "name": "严重霾",
+            "pinin": "yan zhong mai"
+        }
+        ,
+        {
+            "name": "阵雨",
+            "pinin": "zhen yu"
+        },
+        {
+            "name": "雷阵雨",
+            "pinin": "lei zhen yu"
+        },
+        {
+            "name": "雷阵雨并伴有冰雹",
+            "pinin": "lei zhen yu bing bao"
+        },
+        {
+            "name": "小雨",
+            "pinin": "xiao yu"
+        },
+        {
+            "name": "中雨",
+            "pinin": "zhong yu"
+        },
+        {
+            "name": "大雨",
+            "pinin": "da yu"
+        },
+        {
+            "name": "暴雨",
+            "pinin": "bao yu"
+        },
+        {
+            "name": "大暴雨",
+            "pinin": "da bao yu"
+        },
+        {
+            "name": "特大暴雨",
+            "pinin": "te da bao yu"
+        },
+        {
+            "name": "强阵雨",
+            "pinin": "qiang zhen yu"
+        },
+        {
+            "name": "强雷阵雨",
+            "pinin": "qiang lei zhen yu"
+        },
+        {
+            "name": "极端降雨",
+            "pinin": "ji duan jiang yu"
+        },
+        {
+            "name": "毛毛雨/细雨",
+            "pinin": "mao mao yu/xi yu"
+        },
+        {
+            "name": "雨",
+            "pinin": ""
+        }
+        ,
+        {
+            "name": "小雨-中雨",
+            "pinin": "xiao yu-zhong yu"
+        },
+        {
+            "name": "中雨-大雨",
+            "pinin": "zhong yu-da yu"
+        },
+        {
+            "name": "大雨-暴雨",
+            "pinin": "da yu-bao yu"
+        },
+        {
+            "name": "暴雨-大暴雨",
+            "pinin": "bao yu-da bao yu"
+        },
+        {
+            "name": "大暴雨-特大暴雨",
+            "pinin": "da bao yu-te da bao yu"
+        },
+        {
+            "name": "雨雪天气",
+            "pinin": "yu xue tian qi"
+        },
+        {
+            "name": "雨夹雪",
+            "pinin": "yu jia xue"
+        },
+        {
+            "name": "阵雨夹雪",
+            "pinin": "zhen yu jia xue"
+        },
+        {
+            "name": "冻雨",
+            "pinin": "dong yu"
+        },
+        {
+            "name": "雪",
+            "pinin": "xue"
+        },
+        {
+            "name": "阵雪",
+            "pinin": "zhen xue"
+        },
+        {
+            "name": "小雪",
+            "pinin": "xiao xue"
+        },
+        {
+            "name": "中雪",
+            "pinin": "zhong xue"
+        },
+        {
+            "name": "大雪",
+            "pinin": "da xue"
+        },
+        {
+            "name": "暴雪",
+            "pinin": "bao xue"
+        }
+        ,
+        {
+            "name": "小雪-中雪",
+            "pinin": "xiao xue-zhong xue"
+        },
+        {
+            "name": "中雪-大雪",
+            "pinin": "zhong xue-da xue"
+        },
+        {
+            "name": "大雪-暴雪",
+            "pinin": "da xue-bao xue"
+        },
+        {
+            "name": "浮尘",
+            "pinin": "fu chen"
+        },
+        {
+            "name": "扬沙",
+            "pinin": "yang sha"
+        },
+        {
+            "name": "沙尘暴",
+            "pinin": "sha chen bao"
+        },
+        {
+            "name": "强沙尘暴",
+            "pinin": "qiang sha chen bao"
+        },
+        {
+            "name": "龙卷风",
+            "pinin": "long juan feng"
+        },
+        {
+            "name": "雾",
+            "pinin": ""
+        }
+        ,
+        {
+            "name": "浓雾",
+            "pinin": "nong wu"
+        },
+        {
+            "name": "强浓雾",
+            "pinin": "qiang nong wu"
+        },
+        {
+            "name": "轻雾",
+            "pinin": "qing wu"
+        },
+        {
+            "name": "大雾",
+            "pinin": "da wu"
+        },
+        {
+            "name": "特强浓雾",
+            "pinin": "te qiang nong wu"
+        }
+        ,
+        {
+            "name": "热",
+            "pinin": "re"
+        },
+        {
+            "name": "冷",
+            "pinin": "leng"
+        },
+        {
+            "name": "未知",
+            "pinin": "wei zhi"
+        }
+    ]
+}

@@ -28,6 +28,10 @@ if not waln.isconnected():
     waln.active(True)
     waln.connect("瑜阳体育","neixiao666")
     # waln.connect("HXPhone","1472583690")
+    # 解析weather.json，转成对象
+    weather_data = {}
+    with open('weather.json', 'r') as f:
+        weather_data = json.load(f)
     while(not waln.isconnected()):
         pass
     print("config:",waln.ifconfig()[0])
@@ -42,11 +46,25 @@ if not waln.isconnected():
         print(resp_json)
         # print(resp_json.get('status'))
         # print(resp_json.get('lives')[0].get('weather'))
-        print(resp_json.get('lives')[0].get('reporttime'))
+        # print(resp_json.get('lives')[0].get('reporttime'))
+        netWeather = resp_json.get('lives')[0].get('weather')
+        weathers = weather_data.get('weathers')
+        weatherPinin1 = ""
+        weatherPinin2 = ""
+        for weather in weathers:
+            if netWeather == weather.get('name'):
+                pinin = weather.get('pinin')
+                if len(pinin) >=16:
+                    weatherPinin1 = pinin[:16]
+                    weatherPinin2 = pinin[16:]
+                else:
+                    weatherPinin1 = pinin
+                break
+        
         reportDate = resp_json.get('lives')[0].get('reporttime').split(" ")[0]
         reportTime = resp_json.get('lives')[0].get('reporttime').split(" ")[1]
         temp = resp_json.get('lives')[0].get('temperature')
-        displayOnScreen(display,"QingDao ^_^","temp:"+temp,"date:"+reportDate,"time:"+reportTime,"XXXXXX","XXXXXX")
+        displayOnScreen(display,"QingDao ^_^","temp:"+temp,"date:"+reportDate,"time:"+reportTime,weatherPinin1,weatherPinin2)
         # 延迟1000毫秒
         time.sleep(1800)
 
